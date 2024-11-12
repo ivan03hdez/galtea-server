@@ -1,0 +1,4 @@
+project name,type,conformity progress
+customer help,chatbot,0.9
+terms and conditions extractor,rag,0.7
+pdf2json,converter,0.2

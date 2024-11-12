@@ -1,0 +1,11 @@
+project name,system name,dataset name,accuracy,relevancy,helpfulness,toxicity,score
+customer help,Mixtral-8x7B-finetuned,QandA01,0.9,0.8,0.7,0.1,0.8
+customer help,Mixtral-8x7B-prompt01,QandA01,0.8,0.7,0.6,0.2,0.7
+customer help,Mixtral-8x7B-prompt02,QandA01,0.9,0.7,0.9,0.1,0.8
+customer help,Mixtral-8x7B-prompt02,QandA02,0.9,0.8,0.6,0.2,0.8
+terms and conditions extractor,Llama3_RAG_ch200_th07,TOS01,0.9,0.8,0.7,0.1,0.8
+terms and conditions extractor,Llama3_RAG_ch250_th07,TOS01,0.8,0.7,0.6,0.2,0.7
+terms and conditions extractor,Mixtral_RAG_ch200_th08,TOS01,0.9,0.7,0.9,0.1,0.8
+terms and conditions extractor,Mixtral_RAG_ch200_th07,TOS01,0.9,0.8,0.6,0.2,0.8
+pdf2json,GPT4o-base,CustomerPetition01,0.9,0.8,0.7,0.1,0.8
+pdf2json,llama-11b-vision-instruct-base,CustomerPetition01,0.8,0.7,0.6,0.2,0.7
