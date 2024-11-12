@@ -15,7 +15,7 @@ This service contains 2 endpoints like follows:
 
 # Tech Stack
 
-This project uses mainly nodejs and Typescript as the core tech stack.
+This project uses mainly NodeJs and Typescript as the core tech stack.
 We also have a postgresql DB cluster hosted in AWS that is the store of this service.
 For managing dependencies we use npm (package manager).
 
