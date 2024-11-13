@@ -9,7 +9,7 @@ import "./dataSource.ts";
 
 const app = express();
 
-const PORT = 3000
+const PORT = process.env.PORT || 3000
 
 app.get('/eval-results', async (req, res) => {
     try {
