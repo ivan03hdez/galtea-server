@@ -4,7 +4,7 @@ import { csvToJson } from "./utils.ts";
 import { AppDataSource } from "../dataSource.ts";
 
 export const getProjectsFromCsv = async (): Promise<Project[]> => {
-    const projectsFilePath = './resources/csv/Projects.csv';
+    const projectsFilePath = './resources/data/Projects.data';
     return await csvToJson<Project>(projectsFilePath)
 }
 

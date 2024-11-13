@@ -5,7 +5,7 @@ import EvaluationResultEntity from "../entity/evaluationResult.ts";
 import EvaluationResult from "../entity/evaluationResult.ts";
 
 export const getEvalResultsFromCsv = async (): Promise<EvalResult[]> => {
-    const evalResultsFilePath = './resources/csv/EvalResults.csv';
+    const evalResultsFilePath = './resources/data/EvalResults.data';
     return await csvToJson<EvalResult>(evalResultsFilePath)
 }
 
