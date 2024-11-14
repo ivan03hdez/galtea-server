@@ -26,15 +26,17 @@ You can run it locally by executing these commands at the root path of the proje
 - `npm install`
 - `npm run start`
 
+We would need to provide the DB connection details via env variables so that we don't expose any secret in our codebase.
+
+However, if you don't set a value to those env variables, the service will run with an error saying that the DB connection failed.  
+
 ### Deployment
 Apart from running it locally, you can also create a docker image, out of the dockerfile provided, and create a container with these commands:
 - docker build -t galtea-nodejs-server . 
-- docker run -p 3000:3000 galtea-nodejs-server
-  - We are binding our computer port 3000 to the container port 3000 so that our computer can forward a request to the container.
+- docker run -p 30000:30000 galtea-nodejs-server
+  - We are binding our computer port 30000 to the container port 30000 so that our computer can forward a request to the container.
 
-We would need to provide the DB connection details via env variables so that we don't expose any secret in our codebase.
-
-However, In order to simplify this and to let you run the service locally, I have created an .env file that I am not going to include in the git repository but I will send it to you in the solution folder.
+From this point on, you will be able to access the service at http://localhost:30000. 
 
 # How to test it
 - `npm run test`

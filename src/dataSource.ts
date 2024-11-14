@@ -42,6 +42,6 @@ AppDataSource.initialize()
         await AppDataSource.runMigrations({ transaction: 'all' })
         // await dumpCsvDataIntoDB()
     })
-    .catch((error) => console.log(error))
+    .catch((error) => console.log('Couldn\'t connect to DB', error))
 
 
