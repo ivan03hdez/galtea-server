@@ -1,5 +1,6 @@
 import { Column, Entity, JoinColumn, ManyToOne, PrimaryGeneratedColumn } from "typeorm"
 import ProjectEntity from "./project.ts";
+import ColumnNumericTransformer from "./columnNumericTransformer.ts";
 
 @Entity({ name: "evaluation_results" })
 export default class EvaluationResult {
@@ -14,14 +15,14 @@ export default class EvaluationResult {
     systemName: string
     @Column({ type: "text", name: "dataset_name" })
     datasetName: string
-    @Column({ type: "double precision", name: "accuracy" })
+    @Column({ type: "double precision", name: "accuracy", transformer: new ColumnNumericTransformer() })
     accuracy: number
-    @Column({ type: "double precision", name: "relevancy" })
+    @Column({ type: "double precision", name: "relevancy", transformer: new ColumnNumericTransformer() })
     relevancy: number
-    @Column({ type: "double precision", name: "helpfulness" })
+    @Column({ type: "double precision", name: "helpfulness", transformer: new ColumnNumericTransformer() })
     helpfulness: number
-    @Column({ type: "double precision", name: "toxicity" })
+    @Column({ type: "double precision", name: "toxicity", transformer: new ColumnNumericTransformer() })
     toxicity: number
-    @Column({ type: "double precision", name: "score" })
+    @Column({ type: "double precision", name: "score", transformer: new ColumnNumericTransformer() })
     score: number
 }
